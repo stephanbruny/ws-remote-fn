@@ -1,0 +1,23 @@
+{
+  "name": "ws-remote-fn",
+  "version": "1.0.0",
+  "description": "Websocket RPC library",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "websocket",
+    "ws",
+    "rpc",
+    "jsonrpc",
+    "microservice",
+    "remote"
+  ],
+  "author": "Stephan Bruny <mail@stephan-bruny.de>",
+  "license": "MIT",
+  "dependencies": {
+    "uuid": "^3.2.1",
+    "ws": "^5.1.1"
+  }
+}
