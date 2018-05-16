@@ -2,6 +2,12 @@
 
 **Call remote functions as if they where local!**
 
+This tiny library let's you call functions from external processes, or remote servers easily.  
+No need for boiler-plating or juggling protocols.  
+Also it enabled you to create simple and fast RPC-APIs.  
+
+If you're developing service oriented systems or microservices, and don't need/want heavy REST-APIs,  
+this module might just be what you were looking for.
 
 ## Install
 
@@ -21,7 +27,7 @@ Provider = (options, api) => WebSocket.Server
 
 #### Parameters:
 
-`options` - WebSocket.Server options (see [ws](https://github.com/websockets/ws/blob/master/doc/ws.md))
+`options` - WebSocket.Server options (see [ws](https://github.com/websockets/ws/blob/master/doc/ws.md))  
 `api` - object containing functions only
 
 **Example:**
@@ -53,9 +59,9 @@ Consumer = (address, options, methods) => object
 
 #### Parameters:
 
-`address` - a string to a websocket address (e.g. `ws://localhost:1337`)
-`options` - WebSocket-options (see [ws](https://github.com/websockets/ws/blob/master/doc/ws.md))
-`methods` - an array of method names of the remote's API **(you don't need this - an automatic discovery is built in)**
+`address` - a string to a websocket address (e.g. `ws://localhost:1337`)  
+`options` - WebSocket-options (see [ws](https://github.com/websockets/ws/blob/master/doc/ws.md))  
+`methods` - an array of method names of the remote's API **(you don't need this - an automatic discovery is built in)**  
 
 **Example**:
 
